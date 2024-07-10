@@ -587,7 +587,7 @@ body {
 }
 .intro--banner {
   position: relative;
-  height: 475px;
+  height: 40%;
 }
 .intro--banner::before {
   content: "";
@@ -702,7 +702,12 @@ body {
     width: 330px;
   }
   .intro--options {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .intro--options ul {
+    flex: 1 1;
   }
   .intro--options > a {
     display: block;
@@ -715,7 +720,7 @@ body {
 }
 @media (max-width: 600px) {
   .intro--banner {
-    height: 360px;
+    height: 35%;
   }
   .intro--banner h1 {
     font-size: 55px;
@@ -1056,6 +1061,13 @@ body {
 @media (max-width: 767px) {
   .about--banner {
     height: 305px;
+    width: 100%;
+  }
+  .about--banner p {
+    font-size: 13px;
+  }
+  .about--banner li {
+    font-size: 13px;
   }
   .about--banner::before {
     top: 0;
