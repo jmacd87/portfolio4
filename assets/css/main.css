@@ -512,6 +512,11 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .header {
+    height: 50px;
+  }
+}
 .side-nav {
   position: relative;
   display: flex;
@@ -720,10 +725,10 @@ body {
 }
 @media (max-width: 600px) {
   .intro--banner {
-    height: 35%;
+    height: 25%;
   }
   .intro--banner h1 {
-    font-size: 55px;
+    font-size: 35px;
   }
   .intro--banner img {
     display: none;
@@ -1070,12 +1075,10 @@ body {
     font-size: 13px;
   }
   .about--banner::before {
-    top: 0;
-    left: 125px;
+    display: none;
   }
   .about--banner::after {
-    top: 35px;
-    left: 260px;
+    display: none;
   }
   .about--banner h2 {
     margin-top: 10px;
