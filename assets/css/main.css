@@ -897,6 +897,9 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .work--lockup .slider {
+    width: 75%;
+  }
   .work--lockup .slider--item-image {
     width: 90px;
     height: 90px;
@@ -913,10 +916,6 @@ body {
 @media (max-width: 600px) {
   .work--lockup .slider {
     width: auto;
-  }
-  .work--lockup .slider--item {
-    width: 75%;
-    width-p-div-text-align: left;
   }
   .work--lockup .slider--item-left, .work--lockup .slider--item-right {
     display: none;
