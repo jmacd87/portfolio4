@@ -1117,9 +1117,6 @@ body {
   }
 }
 @media (max-width: 770px) {
-  .about--banner p {
-    font-size: 12px;
-  }
   .about--banner li {
     padding: 2px;
   }
