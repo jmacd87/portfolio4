@@ -742,11 +742,8 @@ body {
   .intro--banner::before, .intro--banner::after {
     display: none;
   }
-  .intro--banner h1 {
-    margin-top: 0;
-  }
   .intro--options {
-    display: none;
+    display: flex;
   }
 }
 .colorDivide {
@@ -1120,6 +1117,12 @@ body {
   }
 }
 @media (max-width: 770px) {
+  .about--banner p {
+    font-size: 12px;
+  }
+  .about--banner li {
+    padding: 2px;
+  }
   .about--banner {
     height: auto;
   }
@@ -1145,7 +1148,7 @@ body {
     width: 70px;
   }
   .about--options {
-    display: none;
+    display: flex;
   }
   .about .width {
     width: 100%;
