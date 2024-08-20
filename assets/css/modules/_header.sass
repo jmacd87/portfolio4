@@ -30,7 +30,7 @@
     display: flex
     align-items: center
     text-decoration: none
-    color: $white
+    color: #5D3FD3
 
     p
       margin: 0 0 0 10px
@@ -79,7 +79,8 @@
     border: none
     opacity: 0
     visibility: hidden
-    transition: opacity .4s ease-in-out, visibility 0s .4s
+    transition: .5s
+    border: 1px solid $highlight
 
     &:focus
       outline: none
@@ -87,7 +88,11 @@
     &.is-active
       opacity: 1
       visibility: visible
-      transition: opacity .4s ease-in-out .4s
+
+  &--cta:hover
+    border: 1px solid $highlight
+    background: transparent
+    color: $highlight
 
     @media (max-width: 767px)
       display: none

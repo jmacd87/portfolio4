@@ -274,7 +274,7 @@ body {
 }
 
 body {
-  background-color: #0c0c0c;
+  background: url("../img/gradient4.jpeg");
   font-size: 14px;
   line-height: 1.6;
   font-family: "Montserrat", sans-serif;
@@ -449,7 +449,7 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #fff;
+  color: #5D3FD3;
 }
 .header--logo p {
   margin: 0 0 0 10px;
@@ -496,7 +496,8 @@ body {
   border: none;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s;
+  transition: 0.5s;
+  border: 1px solid #5D3FD3;
 }
 .header--cta:focus {
   outline: none;
@@ -504,10 +505,14 @@ body {
 .header--cta.is-active {
   opacity: 1;
   visibility: visible;
-  transition: opacity 0.4s ease-in-out 0.4s;
+}
+.header--cta:hover {
+  border: 1px solid #5D3FD3;
+  background: transparent;
+  color: #5D3FD3;
 }
 @media (max-width: 767px) {
-  .header--cta {
+  .header--cta:hover {
     display: none;
   }
 }
@@ -619,13 +624,20 @@ body {
   line-height: 1;
   z-index: 1;
 }
+.intro--banner button:hover {
+  background: transparent;
+  color: #5D3FD3;
+  border: 1px solid #5D3FD3;
+}
 .intro--banner button {
   position: relative;
   padding: 5px 17px 5px 12px;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: transparent;
+  background-color: #5D3FD3;
   border: none;
+  transition: 0.5s;
+  border: 1px solid #5D3FD3;
 }
 .intro--banner button .btn-background {
   position: absolute;
@@ -633,13 +645,8 @@ body {
   left: 0;
   right: 0;
   height: 100%;
-  background-color: #5D3FD3;
+  background-color: transparent;
   z-index: -1;
-  transition: left 0.2s ease-in-out;
-}
-.intro--banner button:hover #Layer_1 {
-  margin-left: 20px;
-  transition: margin-left 0.2s ease-in-out;
 }
 .intro--banner button:focus {
   outline: none;
@@ -750,7 +757,7 @@ body {
   content: "";
   width: 30px;
   height: 4px;
-  background-color: #5D3FD3;
+  background-color: #9385C8;
 }
 
 .enlarged-image {
@@ -1213,15 +1220,6 @@ body {
 .contact--lockup .modal--options > li {
   width: 130px;
   margin: 0 auto 25px auto;
-}
-.contact--lockup .modal--options li:nth-child(1) {
-  background-color: #1769ff;
-}
-.contact--lockup .modal--options li:nth-child(2) {
-  background-color: #ea4c89;
-}
-.contact--lockup .modal--options li:nth-child(3) {
-  margin-bottom: 0;
   background-color: #5D3FD3;
   text-transform: uppercase;
 }
@@ -1233,6 +1231,13 @@ body {
   color: #fff;
   font-weight: 700;
   background-color: #5D3FD3;
+  border: 1px solid #5D3FD3;
+  transition: 0.5s;
+}
+.contact--lockup .modal--options a:hover {
+  background-color: #0C0C0C;
+  border: 1px solid #5D3FD3;
+  color: #5D3FD3;
 }
 
 .hire {
@@ -1541,18 +1546,18 @@ body {
   overflow: hidden;
 }
 .carousel .active-slide {
-  height: 500px;
+  height: 480px;
   background-color: #151515;
   transition: height 0.6s ease;
 }
 .carousel .a {
-  transform: rotateY(0deg) translateZ(250px);
+  transform: rotateY(-60deg) translateZ(250px);
 }
 .carousel .b {
-  transform: rotateY(60deg) translateZ(250px);
+  transform: rotateY(0deg) translateZ(250px);
 }
 .carousel .c {
-  transform: rotateY(120deg) translateZ(250px);
+  transform: rotateY(60deg) translateZ(250px);
 }
 
 .item {
@@ -1586,7 +1591,15 @@ body {
   text-decoration: none;
   font-weight: 700;
   background-color: #5D3FD3;
+  border: 1px solid #5D3FD3;
   margin-top: 20px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: #151515;
+  border: 1px solid #5D3FD3;
+  color: #5D3FD3;
 }
 
 .image {
@@ -1602,9 +1615,13 @@ body {
   cursor: pointer;
   background: #5D3FD3;
   border-radius: 50%;
+  border: 1px solid #5D3FD3;
+  transition: 0.5s;
 }
 .next:hover, .prev:hover {
-  color: #202020;
+  color: #5D3FD3;
+  background: #151515;
+  border: 1px solid #5D3FD3;
 }
 .next:active, .prev:active {
   top: 84px;
