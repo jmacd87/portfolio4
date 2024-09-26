@@ -791,7 +791,7 @@ body {
   height: 100%;
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 @media (max-width: 1180px) {
   .work {
@@ -941,6 +941,9 @@ body {
   }
 }
 @media (max-width: 600px) {
+  .work {
+    margin-top: 20px;
+  }
   .work--lockup .slider {
     width: auto;
   }
