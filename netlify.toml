@@ -9,3 +9,4 @@
   [headers.values]
     Access-Control-Allow-Origin = "*"
     Referrer-Policy = "no-referrer-when-downgrade"
+    Content-Security-Policy = "script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com"
