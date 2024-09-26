@@ -647,7 +647,7 @@ body {
   position: absolute;
   bottom: 22px;
   right: 0px;
-  width: 280px;
+  width: 300px;
 }
 .intro--options {
   display: flex;
@@ -681,7 +681,8 @@ body {
     font-size: 55px;
   }
   .intro--banner img {
-    width: 330px;
+    width: 300px;
+    right: 50px;
   }
   .intro--options > a {
     margin-right: 30px;
