@@ -695,7 +695,7 @@ body {
     font-size: 55px;
   }
   .intro--banner img {
-    width: 430px;
+    width: 330px;
   }
   .intro--options > a {
     margin-right: 30px;
@@ -709,10 +709,11 @@ body {
     height: 305px;
   }
   .intro--banner h1 {
-    font-size: 44px;
+    font-size: 34px;
+    margin-top: 50px;
   }
   .intro--banner img {
-    width: 330px;
+    width: 250px;
   }
   .intro--options {
     display: flex;
