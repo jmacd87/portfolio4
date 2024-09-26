@@ -142,8 +142,8 @@ $( document ).ready(function() {
       $('.main-content').children().eq(curPos).children().addClass('section--prev');
     }
 
-    if (nextPos !== 0 && nextPos !== lastItem) {
-      $('.header--cta').addClass('is-active');
+    if (nextPos !== 0) {
+      $('.header--cta').removeClass('is-active');
     }
     else {
       $('.header--cta').removeClass('is-active');
