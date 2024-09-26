@@ -740,8 +740,8 @@ body {
   .intro--banner img {
     width: 150px;
     height: auto;
-    bottom: 0;
-    right: 40px;
+    bottom: 22px;
+    right: 0px;
   }
 }
 @media (max-width: 600px) and (max-height: 750px) {
