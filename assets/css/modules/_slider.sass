@@ -1,104 +1,110 @@
 .containerCarousel
-  margin: 0 auto
-  width: 250px
-  position: relative
-  perspective: 1500px
+    margin: 0 auto
+    width: 250px
+    position: relative
+    perspective: 1500px
 
 .carousel
-  height: 100%
-  width: 100%
-  position: absolute
-  transform-style: preserve-3d
-  transition: transform 1s
+    height: 100%
+    width: 100%
+    position: absolute
+    transform-style: preserve-3d
+    transition: transform 1s
 
-  .slide
-    transition: height 0.4s ease
-    height: 200px // Default height
-    overflow: hidden
+    .slide
+        transition: height 0.4s ease
+        height: 200px
+        overflow: hidden
 
-  .active-slide
-    height: 480px
-    background-color: #151515
-    transition: height 0.6s ease
-    
-  .a
-    transform: rotateY(-60deg) translateZ(250px)
+    .active-slide
+        height: 480px
+        background-color: #151515
+        transition: height 0.6s ease
 
-  .b
-    transform: rotateY(0deg) translateZ(250px)
+    .a
+        transform: rotateY(0deg) translateZ(250px)
 
-  .c
-    transform: rotateY(60deg) translateZ(250px)
+    .b
+        transform: rotateY(60deg) translateZ(250px)
+
+    .c
+        transform: rotateY(120deg) translateZ(250px)
+
+    .d
+        transform: rotateY(180deg) translateZ(250px)
+
+    .e
+        transform: rotateY(240deg) translateZ(250px)
 
 .item
-  display: block
-  position: absolute
-  background: #000
-  width: 250px
-  height: 200px
-  font-size: 5em
-  text-align: center
-  color: #FFF
-  border-radius: 10px
-  overflow: hidden
+    display: block
+    position: absolute
+    background: #000
+    width: 250px
+    height: 200px
+    font-size: 5em
+    text-align: center
+    color: #FFF
+    border-radius: 10px
+    overflow: hidden
 
 .slider-description
-  color: white
-  font-size: 12px
-  margin: 15px
-  
+    color: white
+    font-size: 12px
+    margin: 15px
+
 .clickable-image
-  cursor: pointer
+    cursor: pointer
 
 .button
-  color: #fff
-  display: inline-block
-  width: 45%
-  padding: 8px 0
-  text-decoration: none
-  font-weight: 700
-  background-color: #5D3FD3
-  border: 1px solid $highlight
-  margin-top: 20px
-  transition: .5s
+    color: #fff
+    display: inline-block
+    width: 45%
+    padding: 8px 0
+    text-decoration: none
+    font-weight: 700
+    background-color: #5D3FD3
+    border: 1px solid $highlight
+    margin-top: 20px
+    transition: 0.5s
 
 .button:hover
-  background-color: #151515
-  border: 1px solid $highlight
-  color: $highlight
+    background-color: #151515
+    border: 1px solid $highlight
+    color: $highlight
 
 .image
-  width: 250px
-  height: 250px
+    width: 250px
+    height: 250px
 
 .next, .prev
-  color: white
-  position: absolute
-  top: 80px
-  padding: 1em 1.3em
-  cursor: pointer
-  background: #5D3FD3
-  border-radius: 50%
-  border: 1px solid $highlight
-  transition: 0.5s
-  
-  &:hover
-    color: $highlight
-    background: #151515
+    color: white
+    position: absolute
+    top: 80px
+    padding: 1em 1.3em
+    cursor: pointer
+    background: #5D3FD3
+    border-radius: 50%
     border: 1px solid $highlight
+    transition: 0.5s
 
-  &:active
-    top: 84px
+    &:hover
+        color: $highlight
+        background: #151515
+        border: 1px solid $highlight
+
+    &:active
+        top: 84px
 
 .next
-  right: 5em
+    right: 5em
 
 .prev
-  left: 5em
+    left: 5em
 
 @media only screen and (max-width: 600px)
-  .next
-    right: 0em
+    .next
+        right: 0em
 
-  .prev
-    left: 0em
+    .prev
+        left: 0em
