@@ -197,7 +197,7 @@
                         </div>
                         <div class="item b slide">
                           <img
-                            src="assets/img/MemberFitness3.png"
+                            src="assets/img/preana.png"
                             alt="Joel MacDonald"
                             class="clickable-image image"
                           />
@@ -205,13 +205,13 @@
                             class="slider--item-title gradient-text"
                             style="margin-top: 0px"
                           >
-                            Fitness Website
+                            Healthcare Dashboard
                           </p>
                           <p class="slider-description">
-                            Front end of a fully responsive fitness portal where
-                            members can manage user information, payment
-                            methods, and shop online. <br /><a
-                              href="https://memberfitness.netlify.app/"
+                            Front end of a customer dashboard where users can
+                            manage user information, coverage, and members.
+                            Built with React, Material UI, ContextAPI <br /><a
+                              href="https://preana.netlify.app/"
                               target="_blank"
                               class="button"
                               ><i class="fas fa-link"></i> Website</a
@@ -220,7 +220,7 @@
                         </div>
                         <div class="item c slide">
                           <img
-                            src="assets/img/carrental.png"
+                            src="assets/img/RainyCity.png"
                             alt="Joel MacDonald"
                             class="clickable-image image"
                           />
@@ -228,21 +228,21 @@
                             class="slider--item-title gradient-text"
                             style="margin-top: 0px"
                           >
-                            Car Rental Website
+                            Blog
                           </p>
                           <p class="slider-description">
-                            Front end built with HTML, CSS and JavaScript.
-                            Simple yet effective responsive design.
+                            Responsive blog website built with React, MongoDB,
+                            and CSS. Linked to a Mongo DB database with API to
+                            fetch posts.
                             <br />
                             <a
-                              href="https://rentthatcar.netlify.app"
+                              href="https://rainycityblog.vercel.app/"
                               target="_blank"
                               class="button"
                               ><i class="fas fa-link"></i> Website</a
                             >
                           </p>
                         </div>
-
                         <div class="item d slide">
                           <img
                             src="assets/img/gpt2.png"
@@ -261,31 +261,6 @@
                             <br />
                             <a
                               href="https://mygpt3.netlify.app"
-                              target="_blank"
-                              class="button"
-                              ><i class="fas fa-link"></i> Website</a
-                            >
-                          </p>
-                        </div>
-                        <div class="item e slide">
-                          <img
-                            src="assets/img/PersonalFinance.png"
-                            alt="Joel MacDonald"
-                            class="clickable-image image"
-                          />
-                          <p
-                            class="slider--item-title gradient-text"
-                            style="margin-top: 0px"
-                          >
-                            Personal Finance Website
-                          </p>
-                          <p class="slider-description">
-                            Clean modern interface for a personal finance
-                            application. Fully mobile responsive and dark mode
-                            toggled. Built with React, Vite, and Material UI.
-                            <br />
-                            <a
-                              href="https://macpersonalfinance.netlify.app/"
                               target="_blank"
                               class="button"
                               ><i class="fas fa-link"></i> Website</a
@@ -420,9 +395,9 @@
         if (e.data.d === 'n') {
           // Next button clicked
           // Increment slideIndex and wrap around if needed
-          if (slideIndex === 4) {
+          if (slideIndex === 3) {
             slideIndex = 0;
-            currdeg -= 120; // Rotate 240 degrees when moving from slide 2 to 0
+            currdeg -= 180; // Rotate 180 degrees when moving from slide 3 to 0
           } else {
             slideIndex++;
             currdeg -= 60; // Rotate 60 degrees for other slides
@@ -431,8 +406,8 @@
           // Previous button clicked
           // Decrement slideIndex and wrap around if needed
           if (slideIndex === 0) {
-            slideIndex = 4;
-            currdeg += 120; // Rotate 240 degrees when moving from slide 0 to 2
+            slideIndex = 3;
+            currdeg += 180; // Rotate 180 degrees when moving from slide 0 to 3
           } else {
             slideIndex--;
             currdeg += 60; // Rotate 60 degrees for other slides
