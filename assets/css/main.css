@@ -274,7 +274,9 @@ body {
 }
 
 body {
-  background: url("../img/gradient4.jpeg");
+  background: url("../img/gradient4.jpeg") no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
   font-size: 14px;
   line-height: 1.6;
   font-family: "Montserrat", sans-serif;
@@ -1653,5 +1655,40 @@ body {
   }
   .prev {
     left: 0em;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .containerCarousel {
+    width: 400px;
+    perspective: 1600px;
+  }
+  .carousel .slide {
+    height: 320px;
+  }
+  .carousel .active-slide {
+    height: 640px;
+  }
+  .carousel .a {
+    transform: rotateY(0deg) translateZ(400px);
+  }
+  .carousel .b {
+    transform: rotateY(60deg) translateZ(400px);
+  }
+  .carousel .c {
+    transform: rotateY(120deg) translateZ(400px);
+  }
+  .carousel .d {
+    transform: rotateY(180deg) translateZ(400px);
+  }
+  .carousel .e {
+    transform: rotateY(240deg) translateZ(400px);
+  }
+  .item {
+    width: 400px;
+    height: 320px;
+  }
+  .image {
+    width: 400px;
+    height: 400px;
   }
 }/*# sourceMappingURL=main.css.map */

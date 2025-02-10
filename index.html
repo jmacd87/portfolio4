@@ -193,7 +193,37 @@
                   <div class="work--lockup">
                     <div class="containerCarousel">
                       <div class="carousel">
+                        <!-- New item a: Journey Genius -->
                         <div class="item a active-slide slide">
+                          <img
+                            src="assets/img/JourneyGenius.png"
+                            alt="Journey Genius"
+                            class="clickable-image image"
+                          />
+                          <p
+                            class="slider--item-title gradient-text"
+                            style="margin-top: 0px"
+                          >
+                            Journey Genius
+                          </p>
+                          <p class="slider-description">
+                            Created with React, this full stack application
+                            fetches from a Priceline API, displays the flights,
+                            adds a link to Google Flights to book, and has an
+                            Open AI Chat bot to help users organize their trips.
+                            <br />
+                            <a
+                              href="https://journey-genius.vercel.app/"
+                              target="_blank"
+                              class="button"
+                            >
+                              <i class="fas fa-link"></i> Website
+                            </a>
+                          </p>
+                        </div>
+
+                        <!-- Shifted item b: Property Rental Website (was previously item a) -->
+                        <div class="item b slide">
                           <img
                             src="assets/img/NomadPads.png"
                             alt="Joel MacDonald"
@@ -208,15 +238,19 @@
                           <p class="slider-description">
                             Built with Next.js, React, and Tailwind. Full stack
                             application that connects to database and image
-                            hosting for property rentals. <br /><a
+                            hosting for property rentals. <br />
+                            <a
                               href="https://nomad-pads.vercel.app/"
                               target="_blank"
                               class="button"
-                              ><i class="fas fa-link"></i> Website</a
                             >
+                              <i class="fas fa-link"></i> Website
+                            </a>
                           </p>
                         </div>
-                        <div class="item b slide">
+
+                        <!-- Shifted item c: Healthcare Dashboard (was previously item b) -->
+                        <div class="item c slide">
                           <img
                             src="assets/img/preana2.png"
                             alt="Joel MacDonald"
@@ -231,15 +265,19 @@
                           <p class="slider-description">
                             Front end of a customer dashboard where users can
                             manage user information, coverage, and members.
-                            Built with React, Material UI, ContextAPI <br /><a
+                            Built with React, Material UI, ContextAPI <br />
+                            <a
                               href="https://preana.netlify.app/"
                               target="_blank"
                               class="button"
-                              ><i class="fas fa-link"></i> Website</a
                             >
+                              <i class="fas fa-link"></i> Website
+                            </a>
                           </p>
                         </div>
-                        <div class="item c slide">
+
+                        <!-- Shifted item d: Blog (was previously item c) -->
+                        <div class="item d slide">
                           <img
                             src="assets/img/RainyCity.png"
                             alt="Joel MacDonald"
@@ -260,11 +298,14 @@
                               href="https://rainycityblog.vercel.app/"
                               target="_blank"
                               class="button"
-                              ><i class="fas fa-link"></i> Website</a
                             >
+                              <i class="fas fa-link"></i> Website
+                            </a>
                           </p>
                         </div>
-                        <div class="item d slide">
+
+                        <!-- Shifted item e: Chat GPT Website (was previously item d) -->
+                        <div class="item e slide">
                           <img
                             src="assets/img/gpt2.png"
                             alt="Joel MacDonald"
@@ -277,15 +318,16 @@
                             Chat GPT Website
                           </p>
                           <p class="slider-description">
-                            Created from a figma design and used chat GPT to
+                            Created from a figma design and used Chat GPT to
                             generate all content.
                             <br />
                             <a
                               href="https://mygpt3.netlify.app"
                               target="_blank"
                               class="button"
-                              ><i class="fas fa-link"></i> Website</a
                             >
+                              <i class="fas fa-link"></i> Website
+                            </a>
                           </p>
                         </div>
                       </div>
@@ -416,9 +458,9 @@
         if (e.data.d === 'n') {
           // Next button clicked
           // Increment slideIndex and wrap around if needed
-          if (slideIndex === 3) {
+          if (slideIndex === 4) {
             slideIndex = 0;
-            currdeg -= 180; // Rotate 180 degrees when moving from slide 3 to 0
+            currdeg -= 120; // Rotate 180 degrees when moving from slide 3 to 0
           } else {
             slideIndex++;
             currdeg -= 60; // Rotate 60 degrees for other slides
@@ -427,8 +469,8 @@
           // Previous button clicked
           // Decrement slideIndex and wrap around if needed
           if (slideIndex === 0) {
-            slideIndex = 3;
-            currdeg += 180; // Rotate 180 degrees when moving from slide 0 to 3
+            slideIndex = 4;
+            currdeg += 120; // Rotate 180 degrees when moving from slide 0 to 3
           } else {
             slideIndex--;
             currdeg += 60; // Rotate 60 degrees for other slides

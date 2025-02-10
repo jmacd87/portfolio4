@@ -108,3 +108,39 @@
 
     .prev
         left: 0em
+
+// Desktop Styles (screens wider than 600px), scaled down by 20%
+@media only screen and (min-width: 600px)
+    .containerCarousel
+        width: 400px
+        perspective: 1600px
+
+    .carousel
+        .slide
+            height: 320px
+
+        .active-slide
+            height: 640px
+
+        .a
+            transform: rotateY(0deg) translateZ(400px)
+
+        .b
+            transform: rotateY(60deg) translateZ(400px)
+
+        .c
+            transform: rotateY(120deg) translateZ(400px)
+
+        .d
+            transform: rotateY(180deg) translateZ(400px)
+
+        .e
+            transform: rotateY(240deg) translateZ(400px)
+
+    .item
+        width: 400px
+        height: 320px
+
+    .image
+        width: 400px
+        height: 400px
